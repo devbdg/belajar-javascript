@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+
+<script>
+
+let foo = 'Hello World';
+
+/* Method substring() sebenarnya hampir sama dengan substr() 
+    yakni sama2 untuk mengambil sebagian karakter didalam string
+    bedanya di method substring() argument pertama adalah index awal pengambilan
+    dan argumen kedua adalah akhir pengambilan
+    
+    Memang sedikit membingungkan huff..
+    Jadi simplenya gini, parameter kedua di method substring()  ini adalah akhir pengambilan yang akan dimulai dari nol, jadi tidak bergantung pada argumen pertama
+    */
+
+console.log(foo.substring(1)); // ello World
+console.log(foo.substring(3,5)) // lo
+
+</script>
+
+</body>
+</html>

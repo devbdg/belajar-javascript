@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+
+<script>
+
+let foo = 'Hello World';
+
+/* Method substr() digunakan untuk mengambil sebagian karakter string. 
+    Method ini bisa di isi dengan 2 argument    
+    Argument pertama adalah nomor index awal pengambilan. 
+    Jika diisi dengan angka positif, perhitungan dimulai dari awal string sebelah kiri. 
+    Tapi jika di isi dengan angka negatif perhitungan akan dimulai dari akhir (sebalah kanan)
+
+    Argument kedua (opsional)
+    menentukan berapa banyak karakter yang ingin di ambil. (DIUMULAI DARI parameter pertama bukan dari awal lagi)
+    Jika argumen kedua ini tidak ditulis maka ambil string sampai akhir
+    */
+
+
+console.log(foo.substr(1)); // ello World
+console.log(foo.substr(-2)) // ld
+console.log(foo.substr(3,5)) // lo Wo
+
+</script>
+
+</body>
+</html>
