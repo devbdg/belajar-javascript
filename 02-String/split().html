@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+
+<script>
+
+let foo = "Anh Yêu Em";
+
+/* method split digunakan untuk memecah string menjadi array
+    method ini bisa diisi dengan 2 argument
+    - Argument pertama (opsional) adalah (separator) pembatas untuk memecah string
+    Argumen pertama ini juga bisa diisi dengan regular expression loh
+    - Argument kedua (opsional) adalah jumlah element yang akan dijadikan array. Jika tidak ditulis
+    maka seluruh string akan dikonversi menjadi element array */
+
+// Ini akan dikonversi menjadi 1 element array
+console.log(foo.split()); // 0 ["Anh Yêu Em"]
+
+// Ini akan dikonversi menjadi banyak array sesuai dengan jumlah karakter pada string
+// karena parameter pertama diisi dengan string kosong maka setiap karakter pada string
+// akan di konversi menjadi element array
+console.log(foo.split('')); // (10) ["A", "n", "h", " ", "Y", "ê", "u", " ", "E", "m"]
+
+// Kalau yang ini akan di konversi menjadi 3 element array ["Anh", "Yêu", "Em"]
+// Kenapa bisa begitu ? karena argument pertamanya diisi dengan spasi
+// Kalau tadinya string "Aku cinta kamu" maka akan  jadi ["Kamu", "cinta", "dia"]
+// Hahah, just kidding, tapi bakal jadi ["Aku", "cinta", kamu]
+console.log(foo.split(' ')); // (3) ["Anh", "Yêu", "Em"]
+
+
+
+// Sekarang kita coba isi argumen keduanya
+console.log(foo.split('', 7)); // (7) ["A", "n", "h", " ", "Y", "ê", "u"]
+</script>
+
+
+</body>
+</html>
