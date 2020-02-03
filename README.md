@@ -1,1 +1,1 @@
-## Repository saya selama belajar javascript
+## Repository saya belajar js
