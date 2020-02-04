@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+<script>
+/* 
+menulis variable tanpa keyword var yang ada di file balajar variabel3.html
+merupakan penulisan yang seharusnya dihindari, karena javascript
+tidak akan mengeluarkan error apapun istilah di programming nya (silent error)
+
+Untuk memaksa browser menampilkan error bisa menggunakan Stict Mode fitur ini hadir di ES5
+Fitur ini membuat programmer menjadi lebih teliti ketika menulis kode program
+
+Strict Mode akan membuat browser manampilkan error  dimana sebelumnya silent error
+Salah satunya karena kita membuat variabel tanpa keyword var
+*/
+
+/* contoh penggunaan Strict Mode" */
+
+"use strict";
+
+var panjang = 10;
+var lebar   = 5;
+luas        = panjang * lebar;
+
+console.log(luas);
+
+/* program di atas akan pengeluarkan error karena variabel luas tidak dideklarasi dengan keyword var */
+
+/* 
+Strict mode bukan hanya akan menampilkan error karena tidak mendeklarasi variable dengan var saja
+tapi juga ada banyak seperti mengisi argument yang sama pada sebuah fungsi
+*/
+</script>
+</body>
+
+</html>
