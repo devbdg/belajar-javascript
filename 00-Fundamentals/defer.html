@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head><title>Belajar Javascript</title></head>
-<body>
+<head>
+<title>Belajar Javascript</title>
 
 <!--
     Atribut defer digunakan untuk mengatur kapan file javascript dijalankan.
@@ -10,12 +10,19 @@
     Tanpa defer, file javascript akan dijalankan langsung pada posisi saat ini.
 -->
 <!-- Contoh penulisan atribut defer -->
-<script src="script.js" defer></script>
-
+<script src="contoh_defer.js" defer></script>
 <!--
     Efek atribut asycn dan defer mungkin terdengar hampir sama
     perbedaaan mendasar adalah, async digunakan untuk mengatur cara eksekusi
     sedangkan defer untuk mengatur kapan javascript di download dan di proses
 -->
+<!--
+    Tanpa atribut defer console.log pada file contoh_defer.js di atas
+    akan mengeluarkan error, karena file javascript di proses lebih awal
+    sebelum tag id #app.
+-->
+</head>
+<body>
+<div id="app"></div>
 </body>
 </html>
