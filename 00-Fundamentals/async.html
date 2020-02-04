@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Learn Javascript</title></head>
+<body>
+
+<!-- 
+    Pada situasi normal browser langsung mendownload
+    dan menjalankan file external javascript pada saat itu juga.
+    Inilah yang menyebabkan jeda waktu beberapa saat ketika
+    browser sedang memproses javascript 
+
+    Jika atribute asycn ditambahkan ke dalam taf <script>,
+    file javascript external akan di proses secara bersamaan
+    dengan html (secara simultan). Dengan kata lain web browser
+    tidak terkunci untuk menjalankan kode javascript.
+    Metode ini dikenal dengan istilah Asynchronous Javascript 
+-->
+
+<!-- Contoh penggunakan atribute async -->
+<script src="script.js" async></script>
+
+<!-- 
+    Dengan menggunakan atribute async halaman web bisa tampil
+    lebih cepat tanpa menunggu javascript selesai di proses
+    artinya tidak mengalami Render Blocking
+-->
+
+</body>
+</html>
