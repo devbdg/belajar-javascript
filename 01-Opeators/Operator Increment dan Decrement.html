@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Belajar Javascript</title>
+</head>
+
+<body>
+<script>
+/* 
+operator increment adalah sebutan untuk penulisan i++
+perintah ini digunakan untuk menaikan nilai variabel i sebanyak 1 angka.
+Ini adalah penulisan singkat dari i = i + 1
+
+Sedangkan opetator decrement adalah kebalikan dari increment.
+yaitu sebutan penulisan i-- fungsinya menurunkan nilai variabel i 1 angka
+
+Posisi peletakannya yaitu ++ dan -- bisa di awal atau di akhir variabel
+seperti i++ atau ++i keduanya berfungsi sama tapi dengan cara eksekusi berbeda
+
+i++ (post-increment)
+++i (pre-increment)
+
+
+Berikut perbedaanya :
+
+i++ = kirim nilai i lalu tambahkan dengan 1
+++i = tambah nilai i dengan 1 lalu kirim nilai i
+begitu juga dengan -- (pre-decrement dan post-dectemenet)
+
+*/
+
+var number = 10;
+// post increment
+console.log(number++);  // 10
+console.log(number);    // 11
+
+number = 10;
+// pre-increment
+console.log(++number);  // 11
+console.log(number);    // 11
+
+number = 10;
+// post-decrement
+console.log(number--);  // 10
+console.log(number);    // 9
+
+number = 10;
+// pre-decrement
+console.log(--number);  // 9
+console.log(number);    // 9
+
+</script>
+</body>
+
+</html>
