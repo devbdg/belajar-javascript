@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/* Operator logika digunakan untuk membandingkan 2 konsisi logika yakni true dan false
+Nilai yang dibandingkan harus bertipe boolean, jika tidak javascript akan secara otomatis mengkonversinya berdasarkan truthy dan falsy value
+
+
+Berikut ini jenis-jenis operator logika di javascript
+*and 
+    a && b  true jika a dan b sama-sama bernilai true
+
+or
+    a || b true jika salah satu dari a atau b bernilai true
+
+not
+    !a true jika nilai a false
+
+NOTE : di javascript tidak ada operator logika XOR sebagai mana ada di bahasa pemrograman JAVA, yakni dimana hasilnya true jika salah satu dari a atau b bernilai true TAPI TIDAK KEDUANYA 
+
+NOTE : di javascript kita harus menggunakan Operator && untuk "and" dan || untuk Operator "or"
+
+Berikut contoh penggunakan operator logika
+*/
+var foo;
+
+foo = false && true;
+console.log(foo); // false
+
+foo = false || true;
+console.log(foo); // true
+
+
+/* membandingkan sebuah fungsi */
+function a() {
+    return true;
+}
+function b() {
+    return false;
+}
+foo = (b() || a());
+console.log(foo); // true
+
+
+
+</script>
+</body>
+</html>
