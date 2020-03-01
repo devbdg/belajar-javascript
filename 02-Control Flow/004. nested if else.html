@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/* Nested if else (if else bercabang) digunakan untuk membuat percabangan kode program yang cukup kompleks
+Dimana di dalam if terdapat if lain 
+
+Berikut contohnya */
+var somebody = "Trang";
+
+if(typeof somebody === "string") {
+    if(somebody === "Riski") {
+        console.log("Hello " + somebody);
+    }
+    else if(somebody === "Nguyen Thuy") {
+        console.log("Chao " + somebody);
+    }
+    else if(somebody === "Trang") {
+        console.log("Chao chị " + somebody);
+    }
+    else {
+        console.log("Hello");
+    }
+}
+else if (typeof somebody === "number") {
+    console.log("variable somebody is a number");
+}
+else {
+    console.log("Not a string or number");
+}
+
+/* KET : di baris ke 14 saya melakukan pengujian apakah variabel somebody tipe datanya string,
+kemudian di dalamnya ada if, else if dan else untuk mengecek isi dari variabel somebody itu sendiri.
+Jika tidak ada yang cocok akan masuk ke else dan mengeluarkan console.log di baris ke 25.
+
+Sedangkan baris ke 28 akan di eksekusi apabila tipe data variable somebody angka.
+
+Apabila pengujian di baris ke 14 dan 28 tidak terpenuhi maka akan masuk ke else pada baris ke 31
+*/
+</script>
+</body>
+</html>
