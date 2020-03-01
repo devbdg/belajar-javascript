@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/* di dalam javascript penyambungan string (string concatenation) menggunakan tanda +, jika di PHP menyambung string menggunakan "titik".
+
+Di javascript jika tipe data yang disambung bukan string, maka akan secara otomatis akan di konversi menjadi string.
+Sekilas terdengar perhatian tapi sedikit membayahakan menurut saya.
+
+Berikut contohnya :
+*/
+var foo, bar, baz;
+
+foo = "Nguyen Thuy ";
+bar = "An Riski ";
+baz = 75.2;
+
+console.log(foo + bar); // Nguyen Thuy An Riski
+
+var coba = bar + baz;
+console.log(coba); // Riski 75.2
+console.log(typeof coba); // string
+// disini terlihat bahwa javascript berusaha mengkonvensi angka isi dari variable baz ke string
+
+</script>
+</body>
+</html>
