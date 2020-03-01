@@ -60,6 +60,90 @@ console.log(foo); // false (more info, check this out  ascii-code.com)
 
 foo = "Nguyen Thuy" == "An Riski";
 console.log(foo); // false. yah,, karena kita nggak sama :(
+
+
+
+
+/* Perbedaaan mendasar antara == dan ==== */
+
+var bar;
+bar = 79 === '79';
+console.log(bar); // true
+/* kenapa ini menghasilnya nilai true ? bukannya yang dibandingkan itu angka dan string ?
+
+Jadi begini, untuk operator sama dengan "==", jika terdapat operasi yang melibatkan dua tipe data berbeda,
+javascript akan mencoba mengkonversi tipe data tersebut ke tipe data lain, kemudian baru dibandingkan */
+
+
+
+/* Falsy dan Truthy Value */
+/* Operator perbandingan == dan === cukup sering digunakan dalam pemrograman,
+apakah username yang diinput sudah sesuai dengan yang ada di database,
+apakah sebuah fungsi menghasilkan nilai true atau tidak */
+
+/* Yang perlu menjadi perhatian, di dalam JavaScript sebuah tipe data akan berubah menjadi tipe data lain
+tergantung operator yang digunakan. Untuk operator perbandingan,
+tipe data ini akan dikonversi menjadi boolean, apakah itu menjadi boolean true, atau boolean false.
+
+Nilai yang hasil konversinya menjadi false dikenal dengan istilah falsy value,
+sedangkan yang akan dikonversi menjadi true disebut sebagai truthy value.
+Berikut daftar falsy value di dalam JavaScript:
+
+• false
+• null
+• undefined
+• 0
+• NaN
+• '' (string kosong)
+• "" (string kosong)
+
+
+Selain nilai-nilai diatas, akan di konversi menjadi truthy value, termasuk:
+
+• true
+• { } (object kosong)
+• [ ] (array kosong)
+• 42 (sembarang angka, termasuk angka negatif dan pecahan, selain angka 0)
+• "foo" (sembarang string, selama bukan string kosong)
+• infinity (termasuk -infinity)
+*/
+
+
+/* Di dalam operasi perbandingan, nilai-nilai ini sering menjadi tidak terduga, seperti contoh berikut: */
+
+var foo;
+foo = '' == '0';
+console.log(foo); // false
+
+foo = 0 == '' ;
+console.log(foo); // true
+
+foo = 0 == '0';
+console.log(foo); // true
+
+foo = false == 'false';
+console.log(foo); // false
+
+foo = false == '0';
+console.log(foo); // true
+
+foo = false == undefined;
+console.log(foo); // false
+
+foo = false == null ;
+console.log(foo); // false
+
+foo = null == undefined ;
+console.log(foo); // true
+
+foo = ' \t\r\n ' == 0 ;
+console.log(foo); // true
+
+/* Untuk menghindari hasil yang ‘aneh’ seperti diatas, disarankan untuk selalu menggunakan
+operator indetik dengan ( === )
+daripada operator sama dengan ( == ).
+*/
+
 </script>
 </body>
 </html>
