@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<body>
+<script>
+/* Operator Spread merupakan operator baru yang hadir di ECMA Script 6
+Operator ini digunakan untuk berbagai keperluan yang berhubungan dengan Array,
+salah satunya untuk menggabungkan Array 
+
+Spread Operator menggunakan ... (titik tiga kali) kemudian diikuti dengan nama variabel
+
+Berikut contohnya
+*/
+
+var foo, bar, baz;
+foo = ['Javascript', 'PHP', 'Python', 'Cobra'];
+console.log(foo); // Array(4) [ "Javascript", "PHP", "Python", "Cobra" ]
+
+bar = ['Laravel', 'Flask', 'Vue.js'];
+console.log(bar); // Array(3) [ "Laravel", "Flask", "Vue.js" ]
+
+baz = [...foo, 'HTML', 'CSS'];
+console.log(baz); // Array(6) [ "Javascript", "PHP", "Python", "Cobra", "HTML", "CSS" ]
+/* Arraynya langsung tersambung hanya dengan menambahkan ...kemudian nama variabel */
+
+
+/* contoh lain */
+baz = [...foo, ...bar];
+console.log(baz); // Array(7) [ "Javascript", "PHP", "Python", "Cobra", "Laravel", "Flask", "Vue.js" ]
+
+</script>
+</body>
+</html>
