@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/* javascript memiliki 1 operator conditional yang mirip dengan if else 
+Opeator Conditional sendiri adalah penulisan singkat dari if else
+
+Berikut contoh penulisannya
+*/
+"use strict";
+
+var item = 15, total;
+
+total = item > 10 ? item * 10000 : item * 11000;
+console.log("Total Rp." + total);  // Total Rp.150000
+
+/* kode program di atas ini seperti diskon, jika pelanggan membeli lebih dari 10 item
+maka berikan harga 10k saja per itemnya, tapi jika item kurang dari 10 kasih harga 11k  
+Nah, berhubung pelanggannya beli 15 item maka dikali 15 * 10k dan total yang harus dibayarkan adalah 150k.
+*/
+
+/* jika ditulis menggunakan if else kodenya akan seperti ini */
+var total = 0; // reset dulu
+if (item > 10) {
+    total = item * 10000;
+}
+else {
+    total = item * 11000;
+}
+console.log("Total Rp." + total); // Total Rp.150000
+/* hasilnya akan sama saja */
+
+
+
+/* contoh lain */
+var name = "Trang", who;
+who = name === "Nguyen Thuy" ? "Chao " + name : "Ah, bukan Thuy";
+console.log(who); // Ah, bukan thuy
+
+</script>
+
+</body>
+</html>
