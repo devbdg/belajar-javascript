@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    
+<script>
+/* for of digunakan untuk menampilkan atau me looping isi dari sebuah array
+Fitur ini hadir di ES6.
+for of hampir mirip dengan foreach pada php, tapi for of tidak meliki key
+
+contoh penggunaan */
+let members = [
+        "An Riski",
+        "Nguyen Thuy",
+        "Nhung",
+        "Trang",
+        "Ms Lemon Tea",
+        "UXR"
+    ];
+
+for(let i of members) {
+    console.log(i);
+}
+
+
+
+
+/* coba dengan array 2 dimensi */
+let foo = [
+        ["PHP", "NodeJs", "Python"],
+        ["HTML", "CSS", "Javascript"],
+        ["Laravel", "Vue.js"]
+    ];
+
+for (var i of foo) {
+    for(var j of foo[0]) {
+        console.log(j);
+    }
+}
+
+</script>
+
+</body>
+
+</html>
