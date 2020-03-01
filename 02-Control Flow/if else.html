@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/* di contoh sebelumnya di file if.html hanya membuat 1 percabangan,
+yaitu untuk kondisi true saja, dan tidak akan dijalankan apabila hasil yang di uji false.
+
+Untuk membuat struktur logika jika kondisi false, bisa menggunakan if else
+Berikut contoh percabangan if else */
+var foo, bar;
+foo = "Nguyen Thuy";
+
+if (foo === "Riski") {
+    console.log("Hello " + foo);
+}
+else {
+    console.log("Bukan Riski");
+}
+/* kode program di atas akan masuk ke block else (block false) karena variabel foo bukan berisi "Riski" */
+
+/* contoh lain */
+bar = 10;
+if(typeof bar === "string") {
+    console.log("Isi variabel bar bertipe data string");
+}
+else {
+    console.log("Bukan string");
+}
+/* kode di atas juga akan mengeksekusi block false, karena saya mencoba menguji apakah isi variabel bar bertipe data (typeof) "string" ? eh ternyata bukan, maka akan masuk ke block else */
+</script>
+</body>
+</html>
