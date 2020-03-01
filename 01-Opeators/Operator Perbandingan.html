@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/* Operator perbandingan berfungsi untuk memeriksa hubungan antara sebuah nilai dengan nilai lain.
+apakah type datanya sama, apakah nilainya sama, apakah lebih besar, apakah lebih kecil dll...
+
+Sebagai contoh apakah 79 < 100 ? atau apakah variabel b > a ?
+Hasil akhir dari perbandingan ini berupa tipe data boolean : true (benar) atau flase (salah)
+
+Berikut ini daftar operator perbandingan di dalam javascript.
+
+Sama dengan
+    a == b : true jika nilai a sama dengan b
+
+Identik dengan
+    a === b : true jika nilai a sama dengan b dan memiliki tipe data yang sama
+
+Tidak sama dengan
+    a != b : true jika nilai a tidak sama dengan b
+
+Tidak identik dengan
+    a !== b : true jika a tidak sama dengan b, dan memiliki tipe data yang tidak sama pula
+
+Kurang dari
+    a < b : true jika nilai a kurang dari b
+
+Lebih dari
+    a > b : true jika a lebih besar dari b
+
+Kurang dari atau sama dengan
+    a <= b : true jika nilai a kurang dari atau sama dengan b
+
+Lebih dari atau sam dengan
+    a >= b : true jika nilai a lebih besar atau sama dengan b
+*/
+
+var foo;
+
+foo = false < true;
+console.log(foo); // true
+
+foo = 20 != 10;
+console.log(foo); // true
+
+foo = 10 == "10";
+console.log(foo); // true
+
+foo = 10 === "10";
+console.log(foo); // false (karena mencoba membandingkan anga dengan string)
+
+foo = 0.3 === 3e-1;
+console.log(foo); // true
+
+foo = "a" == "A";
+console.log(foo); // false (more info, check this out  ascii-code.com)
+
+foo = "Nguyen Thuy" == "An Riski";
+console.log(foo); // false. yah,, karena kita nggak sama :(
+</script>
+</body>
+</html>
