@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/* Perintah foo = foo + 75, atau bar = bar + " Javascript" sangat sering digunakan.
+Karena itu tersedia penulisan singkat dari perintah ini, yang biasa disebut dengan Operator gabungan assignment.
+
+Sebagai contoh, foo + foo = 75 bisa ditulis menjadi a += 75;
+Name                    Operator    Sample      Result
+plus-equals             +=          b += 10     b = b + 10
+minus-equals            -=          b -= 10     b = b - 10
+divide-equals           /=          b /= 10     b = b / 10
+multiply-equals         *=          b *= 10     b = b * 10
+modulus-equals          %=          b %= 10     b = b % 10
+bitwise-xor-equals      ˆ=          b ˆ= 10     b = b ˆ 10
+bitwise-and-equals      &=          b &= 10     b = b & 10
+bitwise-or-equals       |=          b |= 10     b = b | 10
+left-shift-equals       <<=         b <<= 10    b = b << 10
+right-shift-equals      >>=         b >>= 10    b = b >> 10
+*/
+
+/* contoh penggunaan */
+var foo, bar, baz;
+foo = 10;
+bar = "Javascript";
+
+baz =  foo += 5;
+console.log(baz); // 15
+
+baz =  foo *= 5;
+console.log(baz); // 75
+
+baz = bar += " is Awesome!";
+console.log(baz);
+
+</script>
+</body>
+</html>
