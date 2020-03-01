@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+/* Yang unik di javascript adalah, jika operator logika di jalanlan pada tipe data yang bukan boolean, hasil dari operasi ini juga bukan boolean, tapi nilai terakhir dari pemprosesan tersebut */
+
+/* coba yuk */
+var foo, bar;
+
+foo = "a";
+bar = "b";
+console.log(foo && bar); // b
+
+foo = "An Riski";
+bar = "Nguyen Thuy";
+console.log(foo || bar); // An Riski
+// hasilnya string itu sendiri (BUKAN boolean TRUE atau FALSE)
+/* KET : Kenapa hasilnya "An Riski" ? kenapa nggak "Nguyen Thuy" saja ?
+Jadi begini, ketika kode di atas dijalankan javascript akan melihat nilai pertama berupa String "An Riski", ini dipahami sebagai TRUE
+setelah itu ditemukan operator ||, dikarenakan nilai pertama true maka javascript tidak akan peduli apapun yang ada di sebelah kanannya,
+mau itu false, number ataupun string juga tetap hasilnya akan true karena operatornya ||. Maka hasil yang dikeluarkan adalah "An Riski"
+*/
+
+console.log(true && "Javascript"); // Javascript
+console.log(true || "Javascript"); // true
+console.log(false && "Javascript") // false
+
+/* Hasil yang didapat memang agak “aneh”.
+Jika saya menjalankan kode program ini di PHP, hasilnya hanya boolean, TRUE atau FALSE;
+Tapi di JavaScript, hasilnya bisa berupa string :-D. Ini yang unik sekaligus bikin pusing di Javascript -_- */
+</script>
+</body>
+</html>
