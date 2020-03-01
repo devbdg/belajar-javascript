@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<script>
+/*
+number merupakan tipe data yang berisikan angka, baik itu angka bulat seperti :
+1, 79, 999, -1000
+maupun angka pecahan seperti :
+1.5, 79.5, 99.2
+
+Yang unik di javascript adalah, tidak membedakan tipe data angka bulat dan angka pecahan.
+
+Biasanya kalau di bahasa pemrograman lain seperti PHP, Java atau yang lain, kita akan dipertemukan dengan tipe data angka integer untuk angka bulat dan float atau real untuk angka pecahan
+*/
+
+/* berikut contoh pembuatan tipe data number di js */
+
+var foo = 79;
+var bar = 79.2;
+var baz = -200;
+
+
+console.log(typeof foo);
+console.log(typeof bar);
+console.log(baz);
+
+
+
+/* Penulisan Scientific Notation
+
+Selainangka normal, JavaScript juga mendukung penulisan scientific notation, yakni penulisan seperti 3e3, atau 0.4e-.
+Huruf e diantara angka ini menandakan pangkat sepuluh.
+Sebagai contoh 3e³ artinya 3x10³ = 3000, sedangkan 0.4e-³ artinya 0.4x10-³ = 0.0004
+
+Berikut contoh penggunaannya: */
+
+var foo = 3e3;
+var bar  = 0.4e-3;
+var baz = -9.353e6;
+
+console.log(foo); //3000
+console.log(bar); //0.0004
+console.log(baz); //-9353000
+
+
+
+
+
+/* Selain angka javascript juga memiliki 2 nilai yang termasuk ke dalam tipe data number, yakni NaN dan Infinity.
+
+Kedua nilai ini hadir untuk menampung tipe data matematika yang tidak umum
+
+berikut contohnya */
+
+var foo = 9 * "a";
+var bar = 9 / "b";
+var baz = 5 / 0;
+
+console.log(typeof foo); // NaN
+console.log(foo);
+console.log(baz);
+
+/* Ket : 
+NaN  -> merupakan singkatan dari Not a Number yang berarti "bukan sebuah angka".
+
+Infinity -> istilah ini adalah "tak hingga" di dapat dari hasil operasi matematika yang tidak umum, misal membagikan sebuah angka dengan nol */
+</script>
+</body>
+
+</html>
