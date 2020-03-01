@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+<script>
+/* sebuah array tidak hanya bisa di isi dengan tipe data primitif saja (string, number atau boolean)
+tapi bisa juga bisa di isi dengan tipe data yang lebih komplek seperti object atau array.
+Eh.. tunggu sebentar.. array di isi dengan array ?
+Yup, ini namanya array 2 dimensi
+
+berikut contoh array 2 dimensi */
+
+var foo = [
+        ["PHP", "NodeJs", "Python"],
+        ["HTML", "CSS", "Javascript"],
+        ["Laravel", "Vue.js"]
+    ];
+    
+/* cara mengaksesnya */
+console.log(foo[2]); // array ["Laravel", "Vue.js"]
+console.log(foo[2][0]); // laravel
+
+
+/* udah element array */
+foo[1][2] = "ECMAScript";
+console.log(foo);
+
+</script>
+</body>
+
+</html>
