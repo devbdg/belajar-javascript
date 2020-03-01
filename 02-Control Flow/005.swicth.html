@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/* jika kondisi yang diperiksa ada banyak, tentu tidak efisien jika menggunakan if else
+karena kita sebagai programmer paling anti untuk mengulang atau menuliskan kode yang sama
+Untuk itu kita bisa menggunakan logika switch agar kode lebih rapi dan simple.
+Berikut contoh penulisan switch */
+
+var day = "Saturday";
+switch(day) {
+    case "Monday":
+        console.log("Belajar Vue.Js");
+        break;
+    case "Tuesday":
+        console.log("Belajar ReactJs");
+        break;
+    case "Wednesday":
+        console.log("Belajar Kotlin");
+        break;
+    case "Thrusday":
+        console.log("Bikin aplikasi android sederhana");
+        break;
+    case "Friday":
+        console.log("Saturday");
+        break;
+    default:
+        console.log("Bantuin ortu, beres2 rumah, kerjain project sampingan, main game dll.");
+}
+
+/* KET :
+Dengan menggunakan logika switch saya nggak perlu lagi nulis if (day === "......") sebanyak 5 kali.
+
+Perintah break; diperlukan sebagai rem untuk keluar dari program switch itu sendiri ketika sudah ditemukan yang cocok.
+
+Perintah default akan di eksekusi apabila tidak ada yang cocok, ini mirip dengan else pada if else
+*/
+
+/* Berikut contoh yang tidak diberikan perintah break; */
+var foo = 5;
+switch(foo) {
+    case 1 :
+        console.log("Belajar Javascript yuk!");
+    case 3 :
+        console.log("Ah aku belajar PHP aja");
+    case 5 :
+        console.log("Aku belajar Vue.js ah..");
+    case 6 :
+        console.log("Aku belajar Laravel aja");
+    default:
+        console.log("Aku main game aja ah");
+}
+
+/* output kode program di atas akan mengeluarkan 3 baris :
+    Aku belajar Vue.js ah.. 005.swicth.html
+    Aku belajar Laravel aja 005.swicth.html
+    Aku main game aja ah 005.swicth.html
+
+Kenapa bisa begitu ? ya karena nggak di kasih rem (break), sehingga setelah ditemukan yang cocok program akan terus dijalankan sampai selesai.
+*/
+
+</script>
+
+</body>
+</html>
